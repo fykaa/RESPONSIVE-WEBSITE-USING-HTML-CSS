@@ -1,97 +1,110 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-:root{
+
+:root {
     --navbar-height: 59px;
 }
 
-#logo img{
-    /* width: 150px; */
-    display: inline;
-    margin: 3px 6px;
-    height: 59px;
-}
 
-#navbar{
-    position: relative;
+
+#navbar {
+    position: sticky;
     display: flex;
     font-family: 'Rubik Wet Paint', cursive;
+    top: 0px;
+
+
 }
 
-#navbar::before{
+#navbar::before {
     content: "";
     background-color: black;
     height: 100%;
     width: 100%;
     position: absolute;
+    /* top: 0px;
+    left: 0px; */
     opacity: 0.5;
     z-index: -1;
+
 }
 
-#navbar ul{
+#logo img {
+    /* width: 150px; */
+    margin: 3px 6px;
+    height: 59px;
+}
+
+#navbar ul {
     display: flex;
 }
 
 
-#navbar ul li{
+#navbar ul li {
     list-style: none;
     font-size: 1.3rem;
     margin: 8px;
 
 }
-#navbar ul li a{
+
+#navbar ul li a {
     text-decoration: none;
     color: white;
     border-radius: 20px;
+    display: block;
     margin: 4px;
     padding: 6px;
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
     color: rgb(0, 0, 0);
     background-color: white;
 }
 
-#home{
+#home {
     display: flex;
-    height: 400px;
+    height: 337px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 3px 200px;
 }
 
-#home::before{
+#home::before {
     content: "";
     background: url(https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
     position: absolute;
+    top: 0px;   /*highly important to fix this margin to avoid problems*/
+    left: 0px;
+    height: 403px;
+    /* height: 109%; */
+    width: 100%;
     opacity: 0.6;
     z-index: -1;
 }
 
-.h-prim{
+/* .h-prim {
     font-size: 3.8rem;
     padding: 12px;
-}
+} */
 
-#home h1{
+#home h1 {
     color: white;
     font-family: 'Rubik Moonrocks', cursive;
     text-align: center;
 }
 
-#home p{
+#home p {
     color: rgb(107, 46, 46);
     text-align: center;
     font-size: 1.3rem;
     font-family: 'Rubik Wet Paint', cursive;
 }
 
-.btn{
+.btn {
     padding: 20px;
     border: 2px black solid;
     border-radius: 20px;
@@ -103,16 +116,16 @@
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: green;
 }
 
-#services{
+#services {
     margin: 34px;
     display: flex;
 }
 
-#services .box{
+#services .box {
     border: 2px solid maroon;
     border-radius: 20px;
     margin: 20px;
@@ -120,7 +133,7 @@
     background-color: rgb(219, 144, 144);
 }
 
-#services .box img{
+#services .box img {
     border: 2px solid maroon;
     width: 100px;
     height: 100px;
@@ -128,7 +141,24 @@
     margin: auto;
 }
 
-.h-primary center{
+.h-primary center {
     display: block;
     margin: auto;
 }
+
+.services-container h1{
+    text-align: center;
+    color: brown;
+    font-size: 3rem;
+}
+.services-container #services .box h2{
+    text-align: center;
+    color: rgb(57, 23, 23);
+    font-size: 2rem;
+}
+.services-container #services .box p{
+    text-align: center;
+    color: rgb(31, 5, 5);
+    font-size: 1rem;
+}
+
