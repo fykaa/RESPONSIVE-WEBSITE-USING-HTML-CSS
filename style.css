@@ -21,6 +21,7 @@ html{
     top: 0px;
 }
 
+
 #navbar::before{
     content: "";
     background-color: black;
@@ -31,6 +32,11 @@ html{
     width:100%;
     z-index: -1;
     opacity: 0.7;
+}
+
+#logo img{
+    width: 100px;
+    height: 100px;
 }
 
 /* Navigation Bar: Logo and Image */
@@ -82,23 +88,23 @@ html{
 #home::before{ 
     content: "";
     position: absolute;
-    background: url('../bg1.jpg') no-repeat center center/cover;
+    background: url(https://media-cdn.tripadvisor.com/media/photo-s/1a/b8/46/6d/london-stock.jpg) no-repeat center center/cover;
     height: 642px;
     top:0px;
     left:0px;
     width: 100%;
     z-index: -1;
-    opacity:0.89;
+    opacity:0.8;
 }
 
 #home h1{
-    color:white;
+    color: #a51515;
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
 
 #home p{
-    color:white;
+    color:rgb(0, 0, 0);
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
